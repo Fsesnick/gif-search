@@ -24,7 +24,7 @@ export default class App extends Component {
         console.log('Error fetching and parsing data', error);
       });
   }
-  
+
   render() { 
     console.log(this.state.gifs);
     return (
@@ -36,7 +36,7 @@ export default class App extends Component {
           </div>   
         </div>    
         <div className="main-content">
-          <GifList />
+          <GifList data={this.state.gifs} />
         </div>
       </div>
     );
